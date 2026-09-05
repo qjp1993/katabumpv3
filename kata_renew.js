@@ -9,6 +9,7 @@ const http = require('http');
 const TG_BOT_TOKEN = process.env.TG_BOT_TOKEN;
 const TG_CHAT_ID = process.env.TG_CHAT_ID;
 const TG_THREAD_ID = process.env.TG_THREAD_ID;
+let IS_MIHOMO_ENABLED = false;
 
 // 调试截图推送开关 (支持环境变量 DEBUG 或 DEBUG_SCREENSHOT: true / 1 / yes / on)
 const IS_DEBUG_MODE = ['true', '1', 'yes', 'on'].includes(
